@@ -32,4 +32,4 @@ li li{list-style-type: circle;}
 .wiki_par a:hover{text-decoration: underline; color: blue;}
 .wiki_par a:visited{color: purple;}
 
-body{background-image: repeating-linear-gradient(to bottom right, white, white 7%, orange 10%, orange 16%, white 19%);}
+body{background-color: rgb(164, 209, 247);}

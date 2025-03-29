@@ -24,7 +24,9 @@ span{font-family: monospace, Courier, sans-serif; background-color: lightgray; b
 
 /*Paragraph of wiki styles*/
 .wiki_par{float: right; width: 75%;}
-.wiki_par li{font-size: 20px; font-weight: 500; color: black; font-family: Verdana, sans-serif;}  
+.wiki_par p{font-size: 20px; font-weight: 500; color: black; font-family: Verdana, sans-serif;}
+.wiki_par li{font-size: 20px; font-weight: 500; color: black; font-family: Verdana, sans-serif;} 
+li li{list-style-type: circle;}
 
 .wiki_par a{color: rgb(80, 91, 241); text-decoration: none; font-family: Courier, sans-serif;}
 .wiki_par a:hover{text-decoration: underline; color: blue;}

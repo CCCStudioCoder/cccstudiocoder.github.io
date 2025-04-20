@@ -8,10 +8,10 @@
 <body>
     <img src="favicon.ico" id="logo"/>
     <nav><ol>
-        <a href="projects.html">Projects</a>
-        <a href="stats.html">Statistics</a>
-        <a href="about.html">About</a>
-        <a href="sustain.html">Sustain</a>
+        <a href="projects">Projects</a>
+        <a href="stats">Statistics</a>
+        <a href="about">About</a>
+        <a href="sustain">Sustain</a>
     </ol></nav>
     <h1>Search</h1>
     <input type="text" id="search" placeholder="Search..."  autofocus="autofocus">
@@ -24,17 +24,17 @@
             }
             const query = document.getElementById('search').value.toLowerCase();
             const pages = [
-                { title: 'advancements', url: 'ore_pack/advancements.html' },
-                { title: 'bronze', url: 'ore_pack/bronze.html' },
-                { title: 'ore pack', url: 'ore_pack/index.html' },
-                { title: 'manganese', url: 'ore_pack/manganese.html' },
-                { title: 'new tools', url: 'ore_pack/new_tools.html' },
-                { title: 'nickel', url: 'ore_pack/nickel.html' },
-                { title: 'ore pack recipes', url: 'ore_pack/recipes.html' },
-                { title: 'silver clock', url: 'ore_pack/silver_clock.html' },
-                { title: 'silver', url: 'ore_pack/silver.html' },
-                { title: 'titanium', url: 'ore_pack/titanium.html' },
-                { title: 'ore pack trades', url: 'ore_pack/trades.html' },
+                { title: 'advancements', url: 'ore_pack/advancements' },
+                { title: 'bronze', url: 'ore_pack/bronze' },
+                { title: 'ore pack', url: 'ore_pack/index' },
+                { title: 'manganese', url: 'ore_pack/manganese' },
+                { title: 'new tools', url: 'ore_pack/new_tools' },
+                { title: 'nickel', url: 'ore_pack/nickel' },
+                { title: 'ore pack recipes', url: 'ore_pack/recipes' },
+                { title: 'silver clock', url: 'ore_pack/silver_clock' },
+                { title: 'silver', url: 'ore_pack/silver' },
+                { title: 'titanium', url: 'ore_pack/titanium' },
+                { title: 'ore pack trades', url: 'ore_pack/trades' },
             ];
             const results = [];
             if (query) {

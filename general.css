@@ -144,30 +144,39 @@ div#results a {
     src: url('images/Minecraft.ttf') format('truetype');
 }
 
-div#featured {
-    width: 95%;
+
+/* Index page styles */
+div.emphasis {
+    width: 90%;
     height: 50%;
     background-color: white;
     border-radius: 50px;
+    position: relative;
+    left: 2.5%;
     padding: 10px;
+    margin-top: 5%;
     border: 3px solid black;
 }
+div *:not(.emphasis-header) {
+    margin-right: auto;
+}
 
-#featured-header {
+.emphasis-header {
     display: flex; /* Use flexbox for alignment */
     justify-content: space-between; /* Space elements to opposite ends */
     align-items: center; /* Vertically align items */
     width: 100%; /* Ensure it spans the full width */
     margin-bottom: 10px; /* Add spacing below the header */
+    gap: 60%; /* Add spacing between child elements */
 }
 
-#featured-header p {
+.emphasis-header p, .emphasis-header a {
     margin: 0; /* Remove default margin */
-    font-size: 24px; /* Adjust font size if needed */
-    font-weight: bold;
+    font-size: 24px !important; /* Adjust font size if needed */
+    font-weight: bold !important; /* Make text bold */  
 }
 
-#featured-header a {
+.emphasis-header a {
     text-decoration: none;
     color: blue;
     font-size: 18px;
@@ -175,7 +184,7 @@ div#featured {
     transition: color 0.3s;
 }
 
-#featured-header a:hover {
+.emphasis-header a:hover {
     color: darkblue; /* Change color on hover */
 }
 

@@ -1,3 +1,12 @@
+/*Box on side styles*/
+.menu{border: 3px dashed turquoise; width: 17%; height: 100%;
+    background-image: linear-gradient(to left, blue, darkblue); padding-left: 3%; padding-top: 2%; 
+    padding-bottom: 2%; float: left; position: fixed; top: 20%; margin-top: 0%;}
+.menu a{font-size: 20px; text-align: left; color: black; text-decoration: none; padding: 1px;
+    text-decoration: none; font-weight: bold;}
+.menu li:hover{list-style-image: url(favicon.ico);}
+
+/*Box on top styles*/
 nav a {
     font-size: 50px;
     color: rgb(220, 225, 245);
@@ -25,7 +34,6 @@ nav {
     position: fixed;
     z-index: 5;
 }
-
 #logo {
     position: fixed;
     width: 5%;
@@ -33,6 +41,8 @@ nav {
     z-index: 7;
     margin-top: auto;
 }
+
+/*For smaller screen*/
 @media screen and (max-width: 865px) {
     nav a {
         display: block; /* Ensures links are stacked vertically */
@@ -58,28 +68,55 @@ nav {
         border-radius: 4px;
         padding-bottom: 20px; /* Adds space at the bottom */
         z-index: 20;
-   }
-   nav a:hover {
-    font-size: 40px;
+    }
+    nav a:hover {
+        font-size: 40px;
     }
     body > *:not(nav):not(nav *) {
         position: relative;
         top: 300px;
     }
-    button{top: 330px; right: 50%;}
-    div#results {
-        position: relative; /* Change to relative to align it naturally in the flow */
-        top: 0; /* Remove the absolute positioning offset */
-        margin-top: 250px; /* Add spacing below the input and button */
-        width: 80%;
+    .menu {
+        border: 3px dashed turquoise;
+        width: 17%;
+        height: 100%;
+        background-image: linear-gradient(to left, blue, darkblue);
+        padding-left: 3%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        float: left;
+        position: fixed;
+        top: 20%;
+        margin-top: 0%;
+        visibility: hidden; /* Initially hidden */
     }
-    #logo {visibility: hidden;}
-    }
+    
+    .menu a{font-size: 20px; text-align: left; color: black; text-decoration: none; padding: 1px;
+        text-decoration: none; font-weight: bold;}
+    .menu li{list-style-type: none;}
+}
 
-
-h1{text-align: center; color: #040; font-size: 40px; margin-top: 0%; position: relative; top: 70px;}
+/*General styles*/
+li{list-style-type: square;}
+h1{text-align: center; font-variant: small-caps;}
+h2{text-shadow: 1px 1px 0px black;}
 .par{font-size: 20px; font-weight: 500; font-family: Verdana, sans-serif;}
 p.par{margin-top: 10%;}
+body{background-image: url(images/Background.gif);}
+p{font-size: 20px; font-weight: 500; font-family: Verdana, sans-serif;}
+#logo{position: fixed; width: 5%; height: 10%;}
+span{font-family: monospace, Courier, sans-serif; background-color: lightgray; border-radius: 3px;}
+
+/*Paragraph of wiki styles*/
+.wiki_par{float: right; width: 75%;}
+.wiki_par p{font-size: 20px; font-weight: 500; color: black; font-family: Verdana, sans-serif;}
+.wiki_par li{font-size: 20px; font-weight: 500; color: black; font-family: Verdana, sans-serif;} 
+li li{list-style-type: circle;}
+
+.wiki_par a{color: rgb(80, 91, 241); text-decoration: none; font-family: Courier, sans-serif;}
+.wiki_par a:hover{text-decoration: underline; color: blue;}
+.wiki_par a:visited{color: purple;}
+
 body{background-color: rgb(164, 209, 247);}
 
 /*Search page styles*/
